@@ -1,0 +1,197 @@
+%!TEX output_directory = ./tmp/
+
+% ctrl-shift-b -> basic builder xelatex
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+\usepackage[top=0.4in, bottom=0.4in, left=0.58in, right=0.58in]{geometry}
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin Regular} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+\usepackage{tabularx}
+\usepackage{pifont}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0,0} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\href{https://fr.linkedin.com/pub/yuxiang-li/65/553/356}{\huge Yuxiang \textsc{LI}}\par}} % Your name
+
+\begin{tabular}{@{}p{0.66cm}rlp{2.5cm}rl}
+& \textsc{Address:} & Lausanne, Canton of Vaud, Switzerland & & \textsc{Phone:} & +41 79 296 92 96 \\
+& & & & \textsc{Email:} & \href{mailto:li.yuxiang.nj@gmail.com}{li.yuxiang.nj@gmail.com}
+\end{tabular}
+
+\begin{tabular}{p{0.205cm}rl}
+& \textsc{Interests:} & Machine Learning, Computer Vision, Robotics, Data Analysis \\
+& \textsc{Objective:} & Looking for a full-time job starting from April 2018 
+% & \textsc{Objective:} & Looking for 3 month summer internship starting from June 2017
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabularx}{\textwidth}{rX}
+
+2016 - \textsc{present} & \textbf{\large EPFL} \hspace{0.2cm} | \hspace{0.01cm} MSc in \textsc{Computer Science}, Current GPA 5.81/6.0 \hfill Lausanne, Switzerland\vspace{0.2cm} \\
+
+2013 - \textsc{2016} & \textbf{\large Ecole polytechnique} \hspace{0.2cm} | \hspace{0.01cm} Dipl.-Ing in \textsc{Computer Science}, GPA 3.92/4.0 \hfill Palaiseau, France\vspace{0.2cm} \\
+
+2011 - 2013 & \textbf{\large Lyc\'ee Louis-le-Grand} \hspace{0.2cm} | \hspace{0.01cm} \textsc{Pr\'epa Maths, Physics, Engineering} (MPSI-PSI*) \hfill Paris, France\vspace{0.2cm} \\
+
+% 2005 - 2011 & \textbf{\large Nanjing Foreign Language School} \hspace{0.2cm} | \textsc{High school diploma} \hfill Nanjing, China \\
+
+\end{tabularx}
+
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Professional experience}
+
+\begin{tabularx}{\textwidth}{p{0.19cm}r|X}
+
+& 2016 & \textbf{\large Philips Research - Medisys} \hspace{0.3cm} | \hspace{0.01cm} \textsc{Research intern} \hfill Suresnes, France \\
+& 6 months & Image restoration with deep learning supervised by Dr. Bo Zhang and Dr. Raoul Florent \\
+& & {\small \ding{219} Development of a parameterizable denoising method for various types of noise} \\
+& & {\small \ding{219} Application of recurrent and feed-forward neural network on Radon reconstruction} \\
+\multicolumn{2}{c}{\vspace{-0.2cm}}  \\
+
+& 2015 & \textbf{\large Amadeus} \hspace{0.2cm} | \hspace{0.01cm} \textsc{QA engineering intern} \hfill Sophia Antipolis, France \\
+& 3 months & Script cartography and Amadeus Quality Reporting \\
+& & {\small \ding{219} Data analysis using parallel computing techniques inside a Quality Assurance team} \\
+& & {\small \ding{219} Web development in coordination with a QA tooling team} \\
+\multicolumn{2}{c}{\vspace{-0.2cm}} \\
+
+& 2013 - 2014 & \textbf{\large Asphalte Community Center} \hspace{0.2cm} | \hspace{0.01cm} \textsc{Civilian service} \hfill Villeneuve-Saint-Georges, France \\
+% & 7 months & Civilian service with IT development initiatives \\
+& 7 months & {\small \ding{219} Civilian service: administrative assistance, academic support and organization of local activities} \\
+& & {\small \ding{219} Information system development with new database and interface} \\
+
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH PROJECTS
+%----------------------------------------------------------------------------------------
+
+\section{Academic Research Projects}
+
+\begin{tabularx}{\textwidth}{r|X}
+
+2016 - \textsc{present} & \textbf{\large IDIAP Research Institute} \hspace{0.2cm} | \hspace{0.01cm} \textsc{2 Semester projects} \hfill Martigny, Switzerland \\
+& Robot learning supervised by Dr. Sylvain Calinon and Dr. François Fleuret \\
+& {\small \ding{219} Robot learning from demonstration - a high-level approach} \\
+& {\small \ding{219} Learning intuitive physics with a robot manipulator} \\
+\multicolumn{2}{c}{\vspace{-0.2cm}}  \\
+
+2015 - 2016 & \textbf{\large LIX (Ecole polytechnique)} \hspace{0.2cm} | \hspace{0.01cm} \textsc{Final year project} \hfill Palaiseau, France \\
+6 months & Object classification with neural network supervised by Prof. Maks Ovsjanikov \\
+& {\small \ding{219} Development of XNet, a neural network framework in C++} \\
+& {\small \ding{219} Participation in a SHREC2016 workshop on 3D sketch-based 3D shape retrieval} \\
+
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	RELEVANT PROJECTS
+%----------------------------------------------------------------------------------------
+
+\section{Relevant course projects}
+
+\begin{dinglist}{45} \itemsep -4pt
+\item Sketch-based 3D model retrieval based on contour classifier with K-Means and TF-IDF method
+\item Face detection with a parallel Adaboost classifier implemented with OpenMPI
+\end{dinglist}
+
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Language \& Other skills}
+
+\begin{tabular}{p{0.153cm}rp{15cm}}
+
+& \textsc{Language} & 
+
+\begin{tabular}[t]{@{}llll@{}}
+\textbf{Chinese:} & native & \textbf{French:} &  bilingual (C1/C2)
+\\
+\textbf{English:} &  fluent (B2/C1, \textsc{Toefl} 106/120) \hspace{0.5cm} & \textbf{Spanish:} &  elementary (A2) \end{tabular}  \vspace{0.1cm} \\
+
+& \textsc{Computer} & 
+
+\begin{tabular}[t]{@{}ll@{}}
+Language: & Java, C++, Python, C\#, SQL \\
+Other: & ROS, Keras, Caffe, CUDA, MPI, Octave (Matlab), Unity 3D, Android
+\end{tabular} \\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SCHOLARSHIPS AND ADDITIONAL INFO
+%----------------------------------------------------------------------------------------
+
+\section{Scholarships \& Awards}
+
+\begin{dinglist}{67} \itemsep -4pt
+\item Excellence fellowship of EPFL
+\item Scholarship of Fondation de l’X (Ecole polytechnique)
+\item 19\textsuperscript{th} at SWERC 2015 (ACM-ICPC Regional), 26\textsuperscript{th} at SWERC 2014
+% \item 33\textsuperscript{th} at Google Hash Code programming competition 2015
+\item 21\textsuperscript{st} at French national team selection for IPhO 2012 (International Physics Olympiad) 
+\end{dinglist}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS AND ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\section{Hobbies \& Activities}
+
+\begin{tabular}{p{0.153cm}rp{15cm}}
+
+& \textsc{Hobbies} & Reading, running, skiing, badminton \vspace{0.1cm} \\
+& \textsc{Activities} & Maintainer of multiple ROS packages on Arch User Repository \\
+& & Finisher of 37\textsuperscript{th} Paris-Versailles race and Raid de l'X (racing, cycling, etc.) \\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	Publications
+%----------------------------------------------------------------------------------------
+
+%\section{Publications}
+
+%\begin{tabular}{p{0.153cm}rp{15cm}}
+
+
+
+%\end{tabular}
+
+
+
+%----------------------------------------------------------------------------------------
+
+
+\end{document}
