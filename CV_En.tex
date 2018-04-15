@@ -1,9 +1,13 @@
 %!TEX output_directory = ./tmp/
 
+% Install LatexTools and the font first
+
+% On Ubuntu, cp -R fontin2_pc /usr/local/share/fonts/ && fc-cache -fv
+
 % ctrl-shift-b -> basic builder xelatex
 
 \documentclass[a4paper,10pt]{article} % Default font size and paper size
-\usepackage[top=0.48in, bottom=0.48in, left=0.58in, right=0.58in]{geometry}
+\usepackage[top=0.68in, bottom=0.48in, left=0.58in, right=0.58in]{geometry}
 
 \usepackage{fontspec} % For loading fonts
 \defaultfontfeatures{Mapping=tex-text}
@@ -37,14 +41,13 @@
 \vspace{0.1cm}
 
 \begin{tabular}{@{}p{0.66cm}rp{8.75cm}rl}
-& \textsc{Address:} & 29 Vinter Terrace, Cambridge, United Kingdom & \textsc{Phone:} & +33 6 63 13 63 26 \\
+& \textsc{Address:} & London WC1H 9QS, United Kingdom & \textsc{Phone:} & +44 7549 618198 \\
 & & & \textsc{Email:} & \href{mailto:li.yuxiang.nj@gmail.com}{li.yuxiang.nj@gmail.com}
 \end{tabular}
 
 \begin{tabular}{p{0.205cm}rl}
-& \textsc{Interests:} & Machine Learning, Computer Vision, Human-Computer Interaction, Robotics \\
-& \textsc{Objective:} & Looking for full-time position starting from April 2018
-% & \textsc{Objective:} & Looking for 3 month summer internship starting from June 2017
+& \textsc{Interests:} & Autonomous Agent, Machine Learning, Human-Computer Interaction \\
+& \textsc{Objective:} & Updated on April 2018
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
@@ -53,13 +56,13 @@
 
 \section{Education}
 
-\begin{tabularx}{\textwidth}{rX}
+\begin{tabularx}{\textwidth}{p{0.19cm}rX}
 
-2016 - \textsc{present} & \textbf{\large EPFL} \hspace{0.2cm} | \hspace{0.01cm} MSc in \textsc{Computer Science}, GPA 5.76/6.0 \hfill Lausanne, Switzerland\vspace{0.2cm} \\
+& 2016 - \textsc{2018} & \textbf{\large EPFL} \hspace{0.2cm} | \hspace{0.01cm} MSc in \textsc{Computer Science}, GPA 5.76/6.0 \hfill Lausanne, Switzerland\vspace{0.2cm} \\
 
-2013 - \textsc{2017} & \textbf{\large Ecole polytechnique} \hspace{0.2cm} | \hspace{0.01cm} Engineer's degree, GPA 3.92/4.0 \hfill Palaiseau, France\vspace{0.2cm} \\
+& 2013 - \textsc{2017} & \textbf{\large Ecole polytechnique} \hspace{0.2cm} | \hspace{0.01cm} Engineer's degree, GPA 3.92/4.0 \hfill Palaiseau, France\vspace{0.2cm} \\
 
-2011 - 2013 & \textbf{\large Lyc\'ee Louis-le-Grand} \hspace{0.2cm} | \hspace{0.01cm} \textsc{Pr\'epa Maths, Physics, Engineering} (MPSI-PSI*) \hfill Paris, France\vspace{0.2cm} \\
+& 2011 - 2013 & \textbf{\large Lyc\'ee Louis-le-Grand} \hspace{0.2cm} | \hspace{0.01cm} \textsc{Pr\'epa Maths, Physics, Engineering} (MPSI-PSI*) \hfill Paris, France\vspace{0.2cm} \\
 
 % 2005 - 2011 & \textbf{\large Nanjing Foreign Language School} \hspace{0.2cm} | \textsc{High school diploma} \hfill Nanjing, China \\
 
@@ -74,8 +77,12 @@
 
 \begin{tabularx}{\textwidth}{p{0.19cm}r|X}
 
-\multicolumn{2}{r|}{2017 - \textsc{present}} & \textbf{\large Microsoft Research} \hspace{0.2cm} | \hspace{0.01cm} \textsc{Research intern} \hfill Cambridge, United Kingdom \\
-& & Playing video games with imitation learning supervised by Dr. Katja Hofmann \\
+\multicolumn{2}{r|}{2018 - \textsc{present}} & \textbf{\large G-Research} \hspace{0.2cm} | \hspace{0.01cm} \textsc{Graduate software developer} \hfill London, United Kingdom \\
+& & Implementation of data analysis pipeline for risk management \\
+\multicolumn{2}{c}{\vspace{-0.2cm}} \\
+
+\multicolumn{2}{r|}{2017 - 2018} & \textbf{\large Microsoft Research} \hspace{0.2cm} | \hspace{0.01cm} \textsc{Research intern} \hfill Cambridge, United Kingdom \\
+& 6 months & Robust Q-learning from demonstrations supervised by Dr. Katja Hofmann and Dr. Ian Kash \\
 \multicolumn{2}{c}{\vspace{-0.2cm}} \\
 
 & 2017 & \textbf{\large Google} \hspace{0.2cm} | \hspace{0.01cm} \textsc{Site reliability engineering intern} \hfill Dublin, Ireland \\
@@ -117,7 +124,7 @@
 \multicolumn{2}{c}{\vspace{-0.2cm}}  \\
 
 & 2015 - 2016 & \textbf{\large LIX (Ecole polytechnique)} \hspace{0.2cm} | \hspace{0.01cm} \textsc{Final year project} \hfill Palaiseau, France \\
-& 6 months & Object classification with neural network supervised by Prof. Maks Ovsjanikov \\
+& 6 months & 3D shape classification with neural network supervised by Prof. Maks Ovsjanikov \\
 & & {\small \ding{219} Development of XNet, a neural network framework in C++} \\
 & & {\small \ding{219} Participation in a SHREC2016 workshop on 3D sketch-based 3D shape retrieval} \\
 
@@ -153,8 +160,8 @@
 & \textsc{Computer} & 
 
 \begin{tabular}[t]{@{}ll@{}}
-Language: & C++, Java, Python, C\#, SQL \\
-Other: & ROS, Keras, Caffe, CUDA, MPI, Octave (Matlab), Unity 3D, Android
+Language: & C++, Java, Python, C\#, Scala \\
+Other: & Spark, Chainer, Keras, MPI, Unity 3D, Angular
 \end{tabular} \\
 
 \end{tabular}
@@ -177,15 +184,15 @@ Other: & ROS, Keras, Caffe, CUDA, MPI, Octave (Matlab), Unity 3D, Android
 %	INTERESTS AND ACTIVITIES
 %----------------------------------------------------------------------------------------
 
-\section{Hobbies \& Activities}
+% \section{Hobbies \& Activities}
 
-\begin{tabular}{p{0.153cm}rp{15cm}}
+% \begin{tabular}{p{0.153cm}rp{15cm}}
 
-& \textsc{Hobbies} & Reading, running, skiing, badminton \vspace{0.1cm} \\
-& \textsc{Activities} & Maintainer of multiple ROS packages on Arch User Repository \\
-& & Finisher of 37\textsuperscript{th} Paris-Versailles race and Raid de l'X (racing, cycling, etc.) \\
+% & \textsc{Hobbies} & Reading, running, skiing, badminton \vspace{0.1cm} \\
+% & \textsc{Activities} & Maintainer of multiple ROS packages on Arch User Repository \\
+% & & Finisher of 37\textsuperscript{th} Paris-Versailles race and Raid de l'X (racing, cycling, etc.) \\
 
-\end{tabular}
+% \end{tabular}
 
 %----------------------------------------------------------------------------------------
 %	Publications
