@@ -1,17 +1,43 @@
 %!TEX output_directory = ./tmp/
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
 
-% Install LatexTools and the font first
+% With Ubuntu and Sublime text
+% 1. Install LatexTools and the font first
+%    cp -R fontin2_pc /usr/local/share/fonts/ && fc-cache -fv
+% 2. ctrl-shift-b -> basic builder xelatex
 
-% On Ubuntu, cp -R fontin2_pc /usr/local/share/fonts/ && fc-cache -fv
-
-% ctrl-shift-b -> basic builder xelatex
+% With WSL and VS Code
+% 1. Install LaTeX Workshop
+% 2. Add the following setting 
+%    "latex-workshop.latex.tools": [
+%        {
+%            "name": "xelatex",
+%            "command": "wsl",
+%            "args": [
+%                "xelatex"
+%            ]
+%        }
+%    ]
+% 3. Build by running `xelatex -aux-directory=tmp CV_En.tex` in the terminal
 
 \documentclass[a4paper,10pt]{article} % Default font size and paper size
 \usepackage[top=0.68in, bottom=0.48in, left=0.58in, right=0.58in]{geometry}
 
 \usepackage{fontspec} % For loading fonts
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin Regular} % Main document font
+% Main document font, load from a custom location
+\setmainfont{Fontin}[
+    Path = fontin2_pc/,
+    BoldFont = *-Bold,
+    ItalicFont = *-Italic,
+    SmallCapsFont = *-SmallCaps,
+    UprightFont = *-Regular
+]
+
+% The following can be used on Ubuntu after installing the font with
+% `cp -R fontin2_pc /usr/local/share/fonts/ && fc-cache -fv`
+% \setmainfont{Fontin} % Main document font
 
 \usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
 
