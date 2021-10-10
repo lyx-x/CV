@@ -9,7 +9,7 @@
 
 % With WSL and VS Code
 % 1. Install LaTeX Workshop
-% 2. Build by running `xelatex -output-directory=tmp CV_En.tex` in the terminal
+% 2. Build by running `Build LaTeX project` in the sidebar
 
 \documentclass[a4paper,10pt]{article} % Default font size and paper size
 \usepackage[top=0.68in, bottom=0.48in, left=0.58in, right=0.58in]{geometry}
@@ -56,15 +56,62 @@
 \par{\centering{\href{https://fr.linkedin.com/pub/yuxiang-li/65/553/356}{\huge Yuxiang Li}\par}} % Your name
 \vspace{0.1cm}
 
-\begin{tabular}{@{}p{0.67cm}rp{8.75cm}rl}
+\begin{tabular}{@{}p{0.77cm}rp{8.75cm}rl}
      & \textsc{Address:} & Zürich, Switzerland & \textsc{Phone:} & +41 79 893 99 36                                               \\
      &                   &                     & \textsc{Email:} & \href{mailto:li.yuxiang.nj@gmail.com}{li.yuxiang.nj@gmail.com}
 \end{tabular}
 
-\begin{tabular}{p{0.215cm}rl}
-     & \textsc{Interests:} & Microservice Management, Reliability Analysis \\
-     & \textsc{Objective:} & None, updated in June 2021
+\begin{tabular}{p{0.315cm}rl}
+     & \textsc{Interests:} & Microservice Governance, Production Platform, Low-Code Development \\
+     & \textsc{Update:} & October 2021
 \end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Professional experience}
+
+\begin{tabularx}{\textwidth}{p{0.19cm}r|X}
+
+    \multicolumn{2}{r|}{2020 - \textsc{present}} & \textbf{\large Google} \hspace{0.2cm} | \hspace{0.01cm} \textbf{\textsc{Senior software engineer}} \hfill Zürich, Switzerland                                                                                                                                                                       \\
+                                                 &                                                                                                                                             & Bulding a microservice governance platform to incentivise microservice adoption within the company, increase configuration uniformity through codified policies and alleviate management fatigue. Tech lead of a small team.  \\
+    \multicolumn{2}{c}{\vspace{-0.2cm}}                                                                                                                                                                                                                                                                                                       \\
+
+    \multicolumn{2}{r|}{2018 - 2020}             & \textbf{\large Google} \hspace{0.2cm} | \hspace{0.01cm} \textbf{\textsc{Software engineer, Site reliability engineering}} \hfill Zürich, Switzerland                                                                                                                                                \\
+                                                 &                                                                                                                                             & Unifying the production setup of the internal alerting and logging service. Automating the regional deployment of Cloud Logging to keep up with GCP's fast expansion. \\
+    \multicolumn{2}{c}{\vspace{-0.2cm}}                                                                                                                                                                                                                                                                                                       \\
+
+    \multicolumn{2}{r|}{2018}                    & \textbf{\large G-Research} \hspace{0.2cm} | \hspace{0.01cm} \textbf{\textsc{Graduate software developer}} \hfill London, United Kingdom                                                                                                                                                             \\
+                                                 & 3 months                                                                                                                                    & Migrating a portfolio data analysis pipeline from C\# to Spark.                                                                                  \\
+    \multicolumn{2}{c}{\vspace{-0.2cm}}                                                                                                                                                                                                                                                                                                       \\
+
+    \multicolumn{2}{r|}{2017 - 2018}             & \textbf{\large Microsoft Research} \hspace{0.2cm} | \hspace{0.01cm} \textbf{\textsc{Research intern}} \hfill Cambridge, United Kingdom                                                                                                                                                              \\
+                                                 & 6 months                                                                                                                                    & Robust Q-learning from demonstrations supervised by Dr. Katja Hofmann and Dr. Ian Kash                                                       \\
+                                                 &                                                                                                                                             & {\small \ding{219} Development of state-of-the-art algorithms for open-sourced project Malmo}                                                \\
+    \multicolumn{2}{c}{\vspace{-0.2cm}}                                                                                                                                                                                                                                                                                                       \\
+
+                                                 & 2017                                                                                                                                        & \textbf{\large Google} \hspace{0.2cm} | \hspace{0.01cm} \textbf{\textsc{Site reliability engineering intern}} \hfill Dublin, Ireland                  \\
+                                                 & 3 months                                                                                                                                    & Source of Truth construction: improve dataset loading and monitoring in Ads Serving                                                          \\
+    \multicolumn{2}{c}{\vspace{-0.2cm}}                                                                                                                                                                                                                                                                                                       \\
+
+                                                 & 2016                                                                                                                                        & \textbf{\large Philips Research} \hspace{0.3cm} | \hspace{0.01cm} \textbf{\textsc{Research intern}} \hfill Suresnes, France                           \\
+                                                 & 6 months                                                                                                                                    & Image restoration with deep learning supervised by Dr. Bo Zhang and Dr. Raoul Florent                                                        \\
+                                                 &                                                                                                                                             & {\small \ding{219} Development of a parameterizable denoising method for noise of unknown distribution}                                      \\
+                                                 &                                                                                                                                             & {\small \ding{219} Application of recurrent and feed-forward neural network on Radon reconstruction}                                         \\
+    \multicolumn{2}{c}{\vspace{-0.2cm}}                                                                                                                                                                                                                                                                                                       \\
+
+                                                 & 2015                                                                                                                                        & \textbf{\large Amadeus} \hspace{0.2cm} | \hspace{0.01cm} \textbf{\textsc{Quality assurance engineering intern}} \hfill Valbonne, France               \\
+    % & 3 months & Script cartography and Amadeus Quality Reporting \\
+                                                 & 3 months                                                                                                                                    & {\small \ding{219} Data analysis using parallel computing techniques inside a Quality Assurance team}                                        \\
+                                                 &                                                                                                                                             & {\small \ding{219} Web development in coordination with a QA tooling team}                                                                   \\
+    \multicolumn{2}{c}{\vspace{-0.2cm}}                                                                                                                                                                                                                                                                                                       \\
+
+                                                 & 2013 - 2014                                                                                                                                 & \textbf{\large Asphalte Community Center} \hspace{0.2cm} | \hspace{0.01cm} \textbf{\textsc{Civilian service}} \hfill Villeneuve-Saint-Georges, France \\
+    % & 7 months & Civilian service with IT development initiatives \\
+                                                 & 7 months                                                                                                                                    & {\small \ding{219} Civilian service: administrative assistance, academic support and organization of local activities}                       \\
+                                                 &                                                                                                                                             & {\small \ding{219} Information system development with new database and interface}                                                           \\
+\end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
@@ -83,49 +130,6 @@
     % 2005 - 2011 & \textbf{\large Nanjing Foreign Language School} \hspace{0.2cm} | \textsc{High school diploma} \hfill Nanjing, China \\
 \end{tabularx}
 
-
-%----------------------------------------------------------------------------------------
-%	PROFESSIONAL EXPERIENCE
-%----------------------------------------------------------------------------------------
-
-\section{Professional experience}
-
-\begin{tabularx}{\textwidth}{p{0.19cm}r|X}
-
-    \multicolumn{2}{r|}{2018 - \textsc{present}} & \textbf{\large Google} \hspace{0.2cm} | \hspace{0.01cm} \textsc{Software engineer, Site reliability engineering} \hfill Zürich, Switzerland                                                                                                                                                \\
-                                                 &                                                                                                                                             & Making alerting and logging systems more reliable                                                                                            \\
-    \multicolumn{2}{c}{\vspace{-0.2cm}}                                                                                                                                                                                                                                                                                                       \\
-
-    \multicolumn{2}{r|}{2018}                    & \textbf{\large G-Research} \hspace{0.2cm} | \hspace{0.01cm} \textsc{Graduate software developer} \hfill London, United Kingdom                                                                                                                                                             \\
-                                                 & 3 months                                                                                                                                    & Implementation of portfolio data analysis pipeline in Spark                                                                                  \\
-    \multicolumn{2}{c}{\vspace{-0.2cm}}                                                                                                                                                                                                                                                                                                       \\
-
-    \multicolumn{2}{r|}{2017 - 2018}             & \textbf{\large Microsoft Research} \hspace{0.2cm} | \hspace{0.01cm} \textsc{Research intern} \hfill Cambridge, United Kingdom                                                                                                                                                              \\
-                                                 & 6 months                                                                                                                                    & Robust Q-learning from demonstrations supervised by Dr. Katja Hofmann and Dr. Ian Kash                                                       \\
-                                                 &                                                                                                                                             & {\small \ding{219} Development of state-of-the-art algorithms for open-sourced project Malmo}                                                \\
-    \multicolumn{2}{c}{\vspace{-0.2cm}}                                                                                                                                                                                                                                                                                                       \\
-
-                                                 & 2017                                                                                                                                        & \textbf{\large Google} \hspace{0.2cm} | \hspace{0.01cm} \textsc{Site reliability engineering intern} \hfill Dublin, Ireland                  \\
-                                                 & 3 months                                                                                                                                    & Source of Truth construction: improve dataset loading and monitoring in Ads Serving                                                          \\
-    \multicolumn{2}{c}{\vspace{-0.2cm}}                                                                                                                                                                                                                                                                                                       \\
-
-                                                 & 2016                                                                                                                                        & \textbf{\large Philips Research} \hspace{0.3cm} | \hspace{0.01cm} \textsc{Research intern} \hfill Suresnes, France                           \\
-                                                 & 6 months                                                                                                                                    & Image restoration with deep learning supervised by Dr. Bo Zhang and Dr. Raoul Florent                                                        \\
-                                                 &                                                                                                                                             & {\small \ding{219} Development of a parameterizable denoising method for noise of unknown distribution}                                      \\
-                                                 &                                                                                                                                             & {\small \ding{219} Application of recurrent and feed-forward neural network on Radon reconstruction}                                         \\
-    \multicolumn{2}{c}{\vspace{-0.2cm}}                                                                                                                                                                                                                                                                                                       \\
-
-                                                 & 2015                                                                                                                                        & \textbf{\large Amadeus} \hspace{0.2cm} | \hspace{0.01cm} \textsc{Quality assurance engineering intern} \hfill Valbonne, France               \\
-    % & 3 months & Script cartography and Amadeus Quality Reporting \\
-                                                 & 3 months                                                                                                                                    & {\small \ding{219} Data analysis using parallel computing techniques inside a Quality Assurance team}                                        \\
-                                                 &                                                                                                                                             & {\small \ding{219} Web development in coordination with a QA tooling team}                                                                   \\
-    \multicolumn{2}{c}{\vspace{-0.2cm}}                                                                                                                                                                                                                                                                                                       \\
-
-                                                 & 2013 - 2014                                                                                                                                 & \textbf{\large Asphalte Community Center} \hspace{0.2cm} | \hspace{0.01cm} \textsc{Civilian service} \hfill Villeneuve-Saint-Georges, France \\
-    % & 7 months & Civilian service with IT development initiatives \\
-                                                 & 7 months                                                                                                                                    & {\small \ding{219} Civilian service: administrative assistance, academic support and organization of local activities}                       \\
-                                                 &                                                                                                                                             & {\small \ding{219} Information system development with new database and interface}                                                           \\
-\end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	RESEARCH PROJECTS
@@ -166,7 +170,7 @@
 
 \section{Language \& Other skills}
 
-\begin{tabular}{p{0.153cm}rp{15cm}}
+\begin{tabular}{p{0.16cm}rp{15cm}}
 
      & \textsc{Language} &
 
@@ -175,14 +179,14 @@
         \\
         \textbf{English:} & fluent (B2/C1, \textsc{Toefl} 106/120) \hspace{0.5cm} & \textbf{Spanish:} & elementary (A2)
         \\
-        \textbf{German:}  & elementary (A1) \hspace{0.5cm}                        &                   &
+        \textbf{German:}  & elementary (A2) \hspace{0.5cm}                        &                   &
     \end{tabular}  \vspace{0.1cm} \\
 
      & \textsc{Computer} &
 
     \begin{tabular}[t]{@{}ll@{}}
-        Language: & C++, Java, Python, C\#, Scala, SQL                           \\
-        Other:    & Spark, Chainer, Keras, Docker, Kubernetes, Unity 3D, Angular \\
+        Language: & C++, Java, Python, Go, C\#, Scala, SQL                           \\
+        Other:    & Spark, Keras, Docker, Kubernetes, Unity 3D \\
     \end{tabular}                 \\
 \end{tabular}
 
